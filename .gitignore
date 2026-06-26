@@ -1,0 +1,36 @@
+# ═══════════════════════════════════════════════
+# SaveYourself — .gitignore
+# ═══════════════════════════════════════════════
+
+# ── Personal / Private Assets ──────────────────
+# If you have a personal logo, keep it out of the repo.
+# See: README.md → "Customization" section.
+assets/developer_logo.png
+
+# ── Chrome Extension Build Artifacts ───────────
+# Generated when packing the extension (chrome://extensions → Pack extension)
+*.crx
+*.pem
+*.zip
+
+# ── Windows / OS junk ──────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── Editor / IDE ────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── Node (if ever added) ────────────────────────
+node_modules/
+npm-debug.log*
+
+# ── Potential secrets / configs ─────────────────
+# Never commit any file containing real passwords or API keys
+*.env
+*.env.*
+config.local.*
+secrets.*
